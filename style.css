@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.main{
+    display: flex;
+}
+@media only screen and (max-width: 760px){
+    .main{
+        flex-direction: column;
+    }
+}
+.right{
+    width: 65%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.img-name-about{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.img-box{
+    width: 130px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid yellow;
+}
+.img-box img{
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+}@media only screen and (max-width: 760px){
+    .img-name-about{
+        font-size: 12px;
+        text-align: justify;
+    }
+    .img-box{
+        width: 210px;
+        height: 100px;
+    }
+}
+.skills{
+    margin-top: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.skills-font{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.font-skills{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.font-skills i{
+    font-size: 1.3rem;
+}
+.skills-tech{
+    display: flex; 
+    align-items: center;
+    gap: 2rem;
+}
+.skills-tech p{
+    font-size: 16px;  
+    margin: 0; 
+}
+.education{
+    display: flex;
+    flex-direction: column;
+    margin-top: 7px;
+    gap: 5px;
+}
+.education-font{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.left{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    gap: 12px;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: max-content;
+    height: max-content;
+    background-color: rgb(30, 30, 30);
+    border-radius: 9px;
+    font-size: 15px;
+}
+.topicons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 13px;
+    color: white;
+}
+.topicons a{
+    color: white;
+    text-decoration: none;
+}
+.topicons a:hover{
+  text-decoration: underline;
+}
+.icons{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons i{
+    font-size: 1rem;
+    color: yellow;
+}
+.top .linkedin{
+    margin-bottom: 20px;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 300px;
+    height: max-content;
+    background-color: rgb(30, 30, 30);
+    border-radius: 9px;
+    gap: 15px;
+}@media only screen and (max-width: 760px){
+    body{
+        font-size: 13px;
+    }
+    .top{
+        font-size: 13px;
+    }
+    .bottom{
+        width: 265px;
+    }
+}
+.projects{
+  border: 2px solid yellow;
+}
+.project-list{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.project-list a{
+    text-decoration: none;
+    color: white;
+}
+.project-list a:hover{
+    text-decoration: underline;
+}
+.project-list .dot-icon i{
+    font-size: 0.7rem;
+    color: gray;
+}@media only screen and (max-width: 760px){
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+}
