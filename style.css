@@ -2,13 +2,11 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    overflow-x: hidden;
-    background-attachment: fixed;
 }
 .main{
     display: flex;
 }
-@media only screen and (max-width: 760px){
+@media only screen and (max-width: 330px){
     .main{
         flex-direction: column;
     }
@@ -34,14 +32,21 @@ body{
     width: 100%;
     background-size: cover;
     height: 100%;
-}@media only screen and (max-width: 760px){
+}
+@media only screen and (max-width: 660px){
     .img-name-about{
-        font-size: 12px;
         text-align: justify;
+        gap: 8px;
+    }
+    .img-name-about h2{
+        font-size: 17px;
+    }
+    .name-about p{
+        font-size: 8px;
     }
     .img-box{
-        width: 210px;
-        height: 100px;
+        width: 120px;
+        height: 70px;
     }
 }
 .skills{
@@ -73,19 +78,54 @@ body{
     gap: 2rem;
 }
 .skills-tech p{
-    font-size: 16px;  
+    font-size: 17px;  
     margin: 0; 
 }
 .education{
     display: flex;
     flex-direction: column;
     margin-top: 7px;
-    gap: 5px;
+    gap: 7px;
 }
 .education-font{
     display: flex;
     align-items: center;
     gap: 5px;
+}
+.educations .degree{
+    font-size: 18px;
+}
+.educations .center{
+    font-size: 15px;
+}
+.educations .year{
+    font-size: 13px;
+}
+@media only screen and (max-width: 660px){
+    .skills-tech p{
+        font-size: 12px;
+    }
+    .skills{
+        gap: 8px;
+    }
+    .font-skills{
+        width: 24px;
+        height: 24px;
+        border-radius: 12px;
+    }
+    .font-skills i{
+        font-size: 1rem;
+    }
+    .educations .degree{
+        font-size: 13px;
+    }
+    .educations .center{
+        font-size: 11px;
+    }
+    .educations .year{
+        font-size: 9px;
+    }
+
 }
 .left{
     padding: 20px;
@@ -143,17 +183,7 @@ body{
     background-color: rgb(30, 30, 30);
     border-radius: 9px;
     gap: 15px;
-}@media only screen and (max-width: 760px){
-    body{
-        font-size: 13px;
-    }
-    .top{
-        font-size: 13px;
-    }
-    .bottom{
-        width: 265px;
-    }
-}
+} 
 .projects{
   border: 2px solid yellow;
 }
@@ -172,11 +202,30 @@ body{
 .project-list .dot-icon i{
     font-size: 0.7rem;
     color: gray;
-}@media only screen and (max-width: 760px){
-    .left{
-        width: 100%;
+}
+@media only screen and (max-width: 660px){
+    .icons{
+        width: 24px;
+        height: 24px;
+        border-radius: 12px;
     }
-    .right{
-        width: 100%;
+    .icons i{
+        font-size: 0.8rem;
+    }
+    .top{
+        font-size: 13px;
+    }
+    .bottom{
+        width: 265px;
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 460px){
+    .top{
+        font-size: 11px;
+    }
+    .bottom{
+        width: 225px;
+        font-size: 11px;
     }
 }
