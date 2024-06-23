@@ -6,7 +6,7 @@ body{
 .main{
     display: flex;
 }
-@media only screen and (max-width: 630px){
+@media only screen and (max-width: 760px){
     .main{
         flex-direction: column;
     }
@@ -23,7 +23,7 @@ body{
     gap: 12px;
 }
 .img-box{
-    width: 130px;
+    width: 110px;
     height: 100px;
     border-radius: 50%;
     border: 1px solid yellow;
@@ -33,23 +33,33 @@ body{
     background-size: cover;
     height: 100%;
 }
-@media only screen and (max-width: 660px){
-    .img-name-about{
-        text-align: justify;
-        gap: 8px;
-    }
-    .img-name-about h2{
-        font-size: 17px;
+@media only screen and (max-width: 760px){
+    .name-about .summary{
+        font-size: 11px;
     }
     .name-about .profession{
-        font-size: 10px;
-    }
-    .name-about .summary{
-        font-size: 8px;
-        text-align: justify;
+        font-size: 13px;
     }
     .img-box{
-        width: 110px;
+        width: 80px;
+        height: 90px;
+    }
+}
+@media only screen and (max-width: 460px){
+    .img-name-about{
+        gap: 8px;
+    }
+    .name-about h2{
+        font-size: 18px;
+    }
+    .name-about .summary{
+        font-size: 9px;
+    }
+    .name-about .profession{
+        font-size: 11px;
+    }
+    .img-box{
+        width: 90px;
         height: 80px;
     }
 }
@@ -89,20 +99,18 @@ body{
     display: flex;
     flex-direction: column;
     margin-top: 7px;
-    gap: 7px;
+    gap: 6px;
 }
-.education-font{
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.educations .degree{
+    font-size: 18px;
 }
-@media only screen and (max-width: 660px){
-    .skills-tech p{
-        font-size: 12px;
-    }
-    .skills{
-        gap: 8px;
-    }
+.educations .center{
+    font-size: 15px;
+}
+.educations .year{
+    font-size: 12px;
+}
+@media only screen and (max-width: 460px){
     .font-skills{
         width: 24px;
         height: 24px;
@@ -111,13 +119,18 @@ body{
     .font-skills i{
         font-size: 1rem;
     }
-
-}
-@media only screen and (max-width: 460px){
     .skills-tech p{
-        font-size: 10px;
+        font-size: 13px;   
+    } 
+    .education .degree{
+        font-size: 14px;
     }
-
+    .education .center{
+        font-size: 11px;
+    }
+    .education .year{
+        font-size: 8px;
+    }
 }
 .left{
     padding: 20px;
@@ -175,16 +188,25 @@ body{
     background-color: rgb(30, 30, 30);
     border-radius: 9px;
     gap: 15px;
-}@media only screen and (max-width: 760px){
-    body{
-        font-size: 13px;
+}@media only screen and (max-width: 660px){
+    .icons{
+        width: 28px;
+        height: 28px;
+        border-radius: 14px;
+    }
+    .icons i{
+        font-size: 0.8rem;
     }
     .top{
         font-size: 13px;
     }
     .bottom{
         width: 265px;
+        font-size: 13px;
     }
+}
+@media only screen and (max-width: 660px){
+
 }
 .projects{
   border: 2px solid yellow;
@@ -202,9 +224,9 @@ body{
     text-decoration: underline;
 }
 .project-list .dot-icon i{
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     color: gray;
-}@media only screen and (max-width: 630px){
+}@media only screen and (max-width: 760px){
     .left{
         width: 100%;
     }
